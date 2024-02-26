@@ -1,16 +1,13 @@
-// datos any
-//si no se le tipea el tipo de dato que sera la variable se pone por defecto any y puede producir errores
-//no usar any
-// let disney: any;
-let disney: boolean | number | string;
+// datos array
 
-disney = "Star Wars y Marvel"
-console.log(disney)
+let arreglo: number[] = [1,2,3.4,5,6]
+let arreglo2:string[] = ["html", "css", "js"]
 
+//larga esrror porque es arreglo es de tipo number
+// arreglo.push("JAVASCRIP")
 
-disney = 15000000
-console.log(disney)
+//no se puede tipar number en un array porque es un array
+// let arreglo:number = [1,2,3.4,5,6]
+//sabiendo eso, la forma correcta de tipar el tipo de dato en un array es asi
+// let arreglo:number[] = [1,2,3.4,5,6]
 
-
-disney = true
-console.log(disney)

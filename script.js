@@ -1,12 +1,10 @@
 "use strict";
-// datos any
-//si no se le tipea el tipo de dato que sera la variable se pone por defecto any y puede producir errores
-//no usar any
-// let disney: any;
-let disney;
-disney = "Star Wars y Marvel";
-console.log(disney);
-disney = 15000000;
-console.log(disney);
-disney = true;
-console.log(disney);
+// datos array
+let arreglo = [1, 2, 3.4, 5, 6];
+let arreglo2 = ["html", "css", "js"];
+//larga esrror porque es arreglo es de tipo number
+// arreglo.push("JAVASCRIP")
+//no se puede tipar number en un array porque es un array
+// let arreglo:number = [1,2,3.4,5,6]
+//sabiendo eso, la forma correcta de tipar el tipo de dato en un array es asi
+// let arreglo:number[] = [1,2,3.4,5,6]
