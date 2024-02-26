@@ -1,22 +1,27 @@
 // Class & POO
 
-    class Pelicula{
-        nombre?: string;
-        protagonistas?:string[];
-        actores?: string[];
+class Sorteo<T>{
 
-        proyectar():void{
-            console.log(`${this.nombre} está siendo proyectada`)
-        }
+    private ticket?: T
+   
+    constructor(private nombre: string){}
 
-        constructor(nombre: string, protagonistas:string[], actores:string[]){
-            this.nombre = nombre,
-            this.protagonistas = protagonistas,
-            this.actores = actores
-        }
+    setTicket(ticket:T){
+        this.ticket = ticket
     }
 
+    getTicket(){
+        return this.ticket
+    }
 
-const pelicula = new Pelicula ("barbie", ["barbie", "ken"], ["margon", "rian"])
-const pelicula2 = new Pelicula ("oppenheimer", ["oppenheimer", "straus"], ["cillian", "robert"])
-pelicula2.proyectar()
+    public sortear(): string{
+        return(`Para ${this.nombre} el ticket es ${this.ticket}`)
+    }
+}
+
+let sorteo = new Sorteo<string>("nayn")
+
+sorteo.setTicket("a12d");
+console.log(sorteo.getTicket())
+
+console.log(sorteo.sortear())

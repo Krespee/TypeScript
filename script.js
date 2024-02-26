@@ -1,15 +1,20 @@
 "use strict";
 // Class & POO
-class Pelicula {
-    proyectar() {
-        console.log(`${this.nombre} está siendo proyectada`);
+class Sorteo {
+    constructor(nombre) {
+        this.nombre = nombre;
     }
-    constructor(nombre, protagonistas, actores) {
-        this.nombre = nombre,
-            this.protagonistas = protagonistas,
-            this.actores = actores;
+    setTicket(ticket) {
+        this.ticket = ticket;
+    }
+    getTicket() {
+        return this.ticket;
+    }
+    sortear() {
+        return (`Para ${this.nombre} el ticket es ${this.ticket}`);
     }
 }
-const pelicula = new Pelicula("barbie", ["barbie", "ken"], ["margon", "rian"]);
-const pelicula2 = new Pelicula("oppenheimer", ["oppenheimer", "straus"], ["cillian", "robert"]);
-pelicula2.proyectar();
+let sorteo = new Sorteo("nayn");
+sorteo.setTicket("a12d");
+console.log(sorteo.getTicket());
+console.log(sorteo.sortear());
