@@ -1,35 +1,16 @@
-// datos tipo booleanos
+// datos any
+//si no se le tipea el tipo de dato que sera la variable se pone por defecto any y puede producir errores
+//no usar any
+// let disney: any;
+let disney: boolean | number | string;
 
-// let estudiasteJavascript: boolean = true;
-
-// if (estudiasteJavascript) {
-//     console.log("Podes seguir el curso")
-// }else{
-//     console.log("Primero debes estudiar")
-// }
-
-//datos tipo number
-
-let interMiami: number  | null | undefined= 11
-let fcDallas: number = 11
-
-let messi: number = 1
-let juegaMessi: boolean= true
-
-let palabras: string = "Holaaa"
+disney = "Star Wars y Marvel"
+console.log(disney)
 
 
-function jugar(equipo1:number, equipo2: number, juegaMessi: boolean):void{
-    let motivo: string = ""
+disney = 15000000
+console.log(disney)
 
-    if (juegaMessi) {
-    equipo1 += messi
-    motivo = "porque juega mesi"
-    }
-    if (equipo1 > equipo2) console.log(`Gana inter ${motivo}`)
-    if (equipo1 == equipo2) console.log("Empatan")
-    if (equipo1 < equipo2) console.log("Gana Dallas")
-}
 
-jugar(interMiami, fcDallas, juegaMessi)
-
+disney = true
+console.log(disney)
