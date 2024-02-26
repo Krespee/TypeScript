@@ -1,1 +1,1 @@
-console.log("Hello World In TypeScript")
+console.log("Mode Observer")

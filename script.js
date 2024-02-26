@@ -1,1 +1,2 @@
-console.log("Hello World In TypeScript");
+"use strict";
+console.log("Mode Observer");
