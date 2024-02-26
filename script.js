@@ -1,14 +1,14 @@
 "use strict";
-// datos objetos
+// Types personalizados
 let programador = {
     nombre: "nayn",
     tecnologias: ["react", "node"],
     estudia: true
 };
-//las propiedades a editar deben coincidir con el tpy de dato de las propiedades de el primer objet
-programador = {
-    nombre: "zahir",
-    tecnologias: ["react", "node", "js"],
-    estudia: false
+// corroborar que el valor que le agregamos a la propiedad simpre sea el mismo que tipamos en el Type personalizado, otra opcion es agregar con "| "tipo de dato""
+let programador2 = {
+    nombre: "fede",
+    tecnologias: ["cobol"],
+    // estudia: null
 };
-console.log(programador);
+console.log(programador2);

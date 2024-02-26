@@ -1,16 +1,21 @@
-// datos objetos
+// Types personalizados
 
-let programador = {
+type Programador = {
+    nombre:string,
+    tecnologias:string[],
+    estudia?: boolean
+}
+
+let programador: Programador = {
     nombre: "nayn",
     tecnologias: ["react", "node"],
     estudia: true
-}
+};
 
-//las propiedades a editar deben coincidir con el tpy de dato de las propiedades de el primer objet
-
-programador = {
-    nombre: "zahir",
-    tecnologias: ["react", "node", "js"],
-    estudia: false
+// corroborar que el valor que le agregamos a la propiedad simpre sea el mismo que tipamos en el Type personalizado, otra opcion es agregar con "| "tipo de dato""
+let programador2: Programador ={
+    nombre: "fede",
+    tecnologias: ["cobol"],
+    // estudia: null
 }
-console.log(programador)
+console.log(programador2)
